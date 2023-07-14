@@ -26,9 +26,6 @@ pub struct User {
     pub uuid: String,
 }
 
-#[derive(Debug)]
-struct Error;
-
 fn main() -> Result<(), Box<dyn std::error::Error>>{
     let mut wtr = csv::Writer::from_path("dummies.csv")?;
 
